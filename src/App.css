@@ -24,6 +24,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 form input,
 form button {
@@ -31,6 +32,7 @@ form button {
   font-size: 2rem;
   border: none;
   background: white;
+  margin-left: 10px;
 }
 
 .filter-todo {
@@ -146,3 +148,11 @@ select {
   transform: scale(1.5);
 }
 */
+
+@media only screen and (max-width: 600px) {
+  body, h1, .todo-input {
+    width: 100%;
+    justify-content: center;
+    align-items: center !important;
+  }
+}
